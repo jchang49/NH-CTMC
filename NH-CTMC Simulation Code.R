@@ -1,5 +1,4 @@
 rm(list = ls())
-set.seed(0)
 
 # Load packages for simulation
 library('bbmle')
@@ -11,7 +10,7 @@ library('cubature')
 ## Set Simulation Parameters
 # Number of subjects
 n = 100
-# Number of detection timepoint (Length of the Markov Chain)
+# Number of detection time point (Length of the Markov Chain)
 T = 50
 # Parameter for lambda (rate of trasitioning from state 0 to state 1)
 a = 9
