@@ -143,10 +143,8 @@ fit = mle2(minuslogl = nLL,
            start = list(a = a.mle.initial, b = b.mle.initial, Beta01 = Beta.mle.initial, Beta10 = Beta.mle.initial), 
            optimizer = 'constrOptim', 
            ui = rbind(c(1,0,0,0), 
-                      c(0,1,0,0), 
-                      c(0,0,0,0), 
-                      c(0,0,0,0)), 
-           ci = c(0,0,-1,-1), 
+                      c(0,1,0,0)),
+           ci = c(0,0), 
            method = 'Nelder-Mead')
 fit2 = summary(fit)
 fit2
